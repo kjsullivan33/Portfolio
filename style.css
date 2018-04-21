@@ -1,0 +1,103 @@
+
+
+.navbar-header {
+  color: white;
+  font-family: Dancing Script;
+  font-size: 36px;
+  
+}
+
+.navbar-header img {
+    height: 175%;
+    margin-top: 0;
+}
+
+html,body {
+  background: radial-gradient(silver, black) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+  
+
+
+
+
+.btn-sample {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  margin-right: 10px;
+}
+
+#about {
+    background-color: #34194f;
+    color: white;
+    
+    
+}
+
+#about p {
+    
+    font-size: 150%;
+    margin-top: 25px;
+    float: left;
+}
+
+#about img {
+    float: left;
+    height: 50%;
+    width: auto;
+    border-radius: 50%;
+    margin-top:0;
+}
+
+.about-me:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text {
+  float: left;
+  margin-top: 11%;
+  width: 70%;
+  padding-left: 7%;
+  font-size: 150%;
+}
+
+.profile-pic {
+  float: left;
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+.images {
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
+    
+}
+
+#projects {
+    background-color: #64db59;
+    color: white;
+    margin-top: 5%;
+    
+}
+
+#contact {
+  background-color:#d34c65;
+  text-align:center;
+  color: white;
+  margin-top: 5%;
+}
+
+.col-xs-8 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
