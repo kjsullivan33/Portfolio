@@ -32,7 +32,7 @@ function calculate(oper) {
     case "-":
       total -= parseFloat(value);
       break;
-    case "X":
+    case "*":
       total *= parseFloat(value);
       break;
     case "/":
@@ -43,8 +43,10 @@ function calculate(oper) {
   value = "0";
 }
 
-$(".clear").click(function() {
-  total = 0;
-  value = "0";
-  $("#display").text(value);
-});
+function clearDisplay(){
+    total = 0;
+    value = "0";
+    $("#display").text(value);
+}
+
+
