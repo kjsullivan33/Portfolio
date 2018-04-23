@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Calculator-Kristen Sullivan</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="calc.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="calculator">
+            <div id="display" type="text" name="display"> </div>
+            <div class="buttoncontainer">
+                <button class="button number" type="button" onClick="setNum('7')">7</button>
+                <button class="button number" type="button" onClick="setNum('8')">8</button>
+                <button class="button number" type="button" onClick="setNum('9')">9</button>
+                <button class="button operator" onClick="calculate('+')" type="button">+</button>
+            </div>
+            <div class="buttoncontainer">
+                <button class="button number" type="button" onClick="setNum('4')">4</button>
+                <button class="button number" type="button" onClick="setNum('5')">5</button>
+                <button class="button number" type="button" onClick="setNum('6')">6</button>
+                <button class="button operator" type="button" onClick="calculate('-')">-</button>
+            </div>
+            <div class="buttoncontainer">
+                <button class="button number" type="button" onClick="setNum('1')">1</button>
+                <button class="button number" type="button" onClick="setNum('2')">2</button>
+                <button class="button number" type="button" onClick="setNum('3')">3</button>
+                <button class="button operator" onClick="calculate('*')" type="button">X</button>
+            </div>
+            <div class="buttoncontainer">
+                <input class="button clear" type="button" value="C"></input>
+                <button class="button number" type="button" onClick="setNum('0')">0</button>
+                <button class="button number" type="button" onClick="addDec()">.</button>
+                <button class="button operator" onClick="calculate('/')" type="button">/</button>
+            </div>
+    </div>
+</body>
+
+</html>
