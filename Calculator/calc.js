@@ -1,13 +1,18 @@
+//To do: 
+//Display input plus operations into another line to keep track of multiple operations
+//Add an equal button
+//Fix the feature to continue operations without clearing the total
+
+var total = 0;
+var value = "0";
+var operator = "0";
+
 $(document).ready(function() {
-  var total = 0;
-  var value = "0";
-  var operator = "";
   $("#display").text(value);
 });
 
 function setNum(num) {
-  if (display.textContent == "0") {
-    total = 0;
+  if (value == "0") {
     value = num;
   } else {
     value += num;
@@ -23,25 +28,38 @@ function addDec() {
   }
 }
 
-function calculate(oper) {
-  console.log(oper);
+function setOper(oper) {
+  if (operator == "0"){
+      operator = oper;
+      total = parseFloat(value);
+      value = "0";
+      $("#display").text(value);
+          
+  } else {
+      calculate(operator);
+  }
+}
+
+function calculate(oper){
   switch (oper) {
     case "+":
-      total += parseFloat(value);
+      total += total;
       break;
     case "-":
-      total -= parseFloat(value);
+      total -= total;
       break;
     case "*":
-      total *= parseFloat(value);
+      total *= total;
       break;
     case "/":
-      total /= parseFloat(value);
+      total /= total;
       break;
   }
-  $("#display").text(parseFloat(total));
+  $("#display").text(total);
+  operator = "0";
   value = "0";
 }
+
 
 function clearDisplay(){
     total = 0;
