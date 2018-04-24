@@ -1,5 +1,6 @@
 //To do: 
-//Calculate total from cumulated string of numbers and operators.
+//Add a digit max
+//Add a check to prevent multiple operators without a new value
 
 var total = 0;
 var value = 0;
