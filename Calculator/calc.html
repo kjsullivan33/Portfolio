@@ -20,7 +20,10 @@
 
     <div class="container">
         <form class="calculator">
-            <div id="display" type="text" name="display"> </div>
+            <div id="display" type="text" name="display"> 
+            </div>
+            <div id="string" type="text" name="string">
+            </div>
             <div class="buttoncontainer">
                 <button class="button number" type="button" onClick="setNum('7')">7</button>
                 <button class="button number" type="button" onClick="setNum('8')">8</button>
@@ -44,6 +47,9 @@
                 <button class="button number" type="button" onClick="setNum('0')">0</button>
                 <button class="button number" type="button" onClick="addDec()">.</button>
                 <button class="button operator" onClick="setOper('/')" type="button">/</button>
+            </div>
+            <div class="buttoncontainer">
+                <button class="button equals" type="button" onClick="calculate()">=</button>
             </div>
     </div>
 </body>
