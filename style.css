@@ -86,7 +86,7 @@ html,body {
 }
 
 #projects {
-    
+    font-size: 26px;
     font-family: Montserrat;
     color: #D5D5D5;
     margin-top: 0%;
@@ -96,6 +96,7 @@ html,body {
 
 .github-link {
   font-size: 26px;
+  text-align: center;
 
 .col-xs-12 {
     display: inline-block;
