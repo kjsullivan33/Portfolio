@@ -266,6 +266,11 @@ li {
   body {
   padding: 0rem;
 }
+
+.header__text--box {
+  top: 45%;
+  
+}
   .heading-primary {
     display: none;
   }
@@ -296,7 +301,7 @@ li {
   }
 
   .btn-link {
-    right: 2rem;
+    right: 4.5rem;
   }
 
   .close {
@@ -304,15 +309,22 @@ li {
   
 }
 
+
+
   .projects-title {
   font-size: 2.5rem;
 }
 
+.projects__box {
+  margin-bottom: 5rem;
+}
+
 .col-1-of-4 {
-  width: calc((100% - 3 * 8rem) / 4);
+  width: 250px;
+  height: 300px;
   display: block;
   margin-top: 10rem;
-  margin-left: 40%;
+  margin-left: 6rem;
 }
 
 #about {
@@ -322,7 +334,7 @@ li {
 .about__profilepic--box {
   position: absolute;
   top: 30%;
-  left: 20%;
+  left: 25%;
   transform: translateY(-50%,-50%);
 }
 
@@ -332,7 +344,7 @@ li {
 }
 
 .about__header {
-  margin-top: 16rem;
+  margin-top: 20rem;
   margin-left: 1rem;
   width: 100%;
   text-align: center;
@@ -342,20 +354,21 @@ li {
 }
 
 .about__summary {
-  width: 280px;
-  margin: 2.5rem 1rem;
+  width: 310px;
+  margin: 3rem 3rem;
   font-size: 1.6rem;
 }
 
 .about__tech-list {
   display: block;
-  margin: 1rem;;
+  margin: 1rem 10rem;
   
 }
 
 .about__skills-list {
   display: block;
   padding-bottom: 1rem;
+  margin: 1rem 10rem;
 }
 
 }
