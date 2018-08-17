@@ -263,6 +263,9 @@ li {
 
 @media (max-width: 500px) {
 
+  body {
+  padding: 0rem;
+}
   .heading-primary {
     display: none;
   }
