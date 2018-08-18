@@ -349,6 +349,10 @@ li {
   padding: 0rem;
 }
 
+#header {
+  height: 100vh;
+}
+
 .header__text--box {
   top: 45%;
   
@@ -382,19 +386,37 @@ li {
     margin-left: 0;
   }
 
-  .btn-link {
-    right: 4.5rem;
-  }
+  .links {
+  position: absolute;
+  top:1rem;
+  right: 0;
+}
+
+.btn-link {
+  font-size: 2.9rem;
+}
 
   .close-x {
   right: 3rem;
   
 }
 
-
+#projects-modal {
+  margin-top: 10px;
+  margin-left: 11px;
+  width: 94%;
+  height: 96%;
+}
 
   .projects-title {
   font-size: 2.5rem;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.project-boxes {
+  overflow-y: scroll;
 }
 
 .projects__box {
@@ -405,19 +427,25 @@ li {
   width: 250px;
   height: 300px;
   display: block;
-  margin-top: 10rem;
-  margin-left: 6rem;
+  margin-top: 7rem;
+  margin-left: 4.5rem;
 }
 
 #about-modal {
-  width: 100%;
+  margin-top: 10px;
+  margin-left: 11px;
+  height: 96%;
+}
+
+.about-details {
+  overflow-y: auto;
 }
 
 .about__profilepic--box {
   position: absolute;
-  top: 30%;
-  left: 25%;
-  transform: translateY(-50%,-50%);
+  top: 10%;
+  left: 20%;
+  transform: translateY(0%);
 }
 
 .about__profilepic {
@@ -426,9 +454,8 @@ li {
 }
 
 .about__header {
-  margin-top: 20rem;
-  margin-left: 1rem;
-  width: 100%;
+  margin-top: 15rem;
+  margin-left: 0rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.1rem;
@@ -437,7 +464,7 @@ li {
 
 .about__summary {
   width: 310px;
-  margin: 3rem 3rem;
+  margin: 3rem 1rem;
   font-size: 1.6rem;
 }
 
