@@ -340,7 +340,7 @@ li {
 }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   .heading-primary__main {
   font-size: 2rem;
   letter-spacing: 1.25rem;
@@ -373,7 +373,7 @@ li {
 
 .about-details {
   margin-top: 5rem;
-  margin-left: 20rem;
+  margin-left: 25rem;
   overflow-y: auto;
   height: 85%;
 }
@@ -440,7 +440,7 @@ li {
 .projects__pic {
   border-radius: 2px;
   width: 90%;
-  height: 75vh;
+  height: 70vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -582,7 +582,7 @@ li {
 .projects__pic {
   border-radius: 2px;
   width: 90%;
-  height: 35%;
+  height: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
