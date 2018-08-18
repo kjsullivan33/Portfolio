@@ -41,6 +41,9 @@ body {
   animation: fadein 2s ease-in;
 }
 
+.fcc-logo {
+  width: 4rem;
+}
 .header__text--box {
   width: 100rem;
   position: absolute;
