@@ -132,7 +132,7 @@ body {
 
 
 
-#about {
+#about-modal {
   display: none;
   background-color: #eee;
   margin-top: 3rem;
@@ -145,11 +145,14 @@ body {
   position: relative;
 }
 
-.close {
-  color: #aaaaaa;
+.close-x {
   position: absolute;
   top: 0;
   right: 3rem;
+}
+
+.close {
+  color: #aaaaaa;
   cursor: pointer;
   font-size: 4rem;
 }
@@ -204,7 +207,8 @@ li {
   margin-left: 2rem;
 }
 
-#projects {
+#projects-modal {
+  display: block;
   background-color: rgba(4, 16, 16,.7);
   height: 90vh;
   display: none;
@@ -212,10 +216,6 @@ li {
   color: white;
   text-align: center;
   text-transform: uppercase;
-}
-
-#projects-content {
-  display: block;
 }
 
 .projects-title {
@@ -263,14 +263,21 @@ li {
   box-shadow: 0 3px 2rem rgba(4, 16, 16,.4);
 }
 
-.modal-project {
+.project-modal {
+  background-color: rgba(4, 16, 16,.7);
+  height: 90vh;
+  padding: 3rem;
   display: relative;
+}
+.project-details {
   margin: 15rem auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
   background-color: #eee;
   color: #777777;
   width: 50rem;
   text-decoration: none;
-  padding: 2rem;
 }
 
 .back {
@@ -293,19 +300,19 @@ li {
   
 }
 
-#weather {
+#weather-modal {
   display: none;
 }
 
-#flash {
+#flash-modal {
   display: none;
 }
 
-#drum {
+#drum-modal {
   display: none;
 }
 
-#markdown {
+#markdown-modal {
   display: none;
 }
 
@@ -379,7 +386,7 @@ li {
     right: 4.5rem;
   }
 
-  .close {
+  .close-x {
   right: 3rem;
   
 }
@@ -402,7 +409,7 @@ li {
   margin-left: 6rem;
 }
 
-#about {
+#about-modal {
   width: 100%;
 }
 

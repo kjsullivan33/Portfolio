@@ -42,17 +42,17 @@
       </div>
       <nav class="navbar">
         <div class="navbar__buttons">
-          <button id='btn-about' class="btn navbar-btn">About</button>
-          <button id='btn-projects' class="btn navbar-btn">Projects</button>
+          <button class="btn navbar-btn click-to-open" data-modal="about-modal">About</button>
+          <button class="btn navbar-btn click-to-open" data-modal="projects-modal">Projects</button>
           <a class="btn navbar-btn" href="mailto:kristenjsullivan83@gmail.com">Contact</a>
         </div>
       </nav>
     </div>
   </header>
   
-    <div id="about" class="modal">
+    <div id="about-modal" class="modal">
       <div class="about-content">
-        <span class="close">&times;</span>
+        <span class="close close-x" data-modal="about-modal">&times;</span>
         <div class="about__profilepic--box">
           <img class="about__profilepic" src="./assets/profilepic.jpg" alt="profilepic">
         </div>
@@ -79,128 +79,137 @@
         </ul>
       </div>
     </div>
-    <div id="projects" class="modal">
-      <div class="row" id="projects-content">
+    <div id="projects-modal" class="modal">
+      <div class="row" id="project-content">
         <h2 class="projects-title">Projects</h2>
-        <span class="close">&times;</span>
+        <span class="close close-x" data-modal="projects-modal">&times;</span>
         <div class="projects__box col-1-of-4">
           <h3 class="projects__name">Weather Forecast</h3>
           <img class="projects__pic" src="./assets/weather.png" alt="Weather Forecast" />
-          <a class="btn btn-learn" id="btn-weather">Learn more &rarr;</a>
+          <a class="btn btn-learn click-to-open" data-modal="weather-modal">Learn more &rarr;</a>
         </div>
         <div class="projects__box col-1-of-4">
           <h3 class="projects__name">Flashcards</h3>
           <img class="projects__pic" src="./assets/Flashcards.png" alt="Flashcards" />
-          <a class="btn btn-learn" id="btn-flash">Learn more &rarr;</a>
+          <a class="btn btn-learn click-to-open" data-modal="flash-modal">Learn more &rarr;</a>
         </div>
         <div class="projects__box col-1-of-4">
           <h3 class="projects__name">Drum Machine</h3>
           <img class="projects__pic" src="./assets/DrumMachine.png" alt="Drum Machine" />
-          <a class="btn btn-learn" id="btn-drum">Learn more &rarr;</a>
+          <a class="btn btn-learn click-to-open" data-modal="drum-modal">Learn more &rarr;</a>
         </div>
         <div class="projects__box col-1-of-4">
           <h3 class="projects__name">Markdown Previewer</h3>
           <img class="projects__pic" src="./assets/Markdown Previewer.png" alt="Markdown Previewer" />
-          <a class="btn btn-learn" id="btn-markdown">Learn more &rarr;</a>
+          <a class="btn btn-learn click-to-open" data-modal="markdown-modal">Learn more &rarr;</a>
         </div>
       </div>
-      <div id="weather" class="modal-project">
-        <h2>Weather Forecast</h2>
-        <h3>Tech Used</h3>
-        <ul class="project__tech-list">
-          <li>React.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Jest/ Enzyme</li>
-        </ul>
-        <h3>Project Overview</h3>
-        <p class="project-overview">This app was built using the React.js framework.
-           Geolocation is used to determine the user's location.
-           The weather data is obtained by making asyncronous calls
-           to the Weather Underground API
-        </p>
-        <h3>Project Links</h3>
-        <ul class="project-links">
-          <li>
-            <a href="#">Live Demo</a>
-          </li>
-          <li>
-            <a href="#">Source Code</a>
-          </li>
-          <li>
-            <span class="back">&larr; Back</span>
-          </li>
-        </ul>
-      </div>
-      <div id="flash" class="modal-project">
-        <h2>Flashcards</h2>
-        <h3>Tech Used</h3>
-        <ul class="project__tech-list">
-          <li>React.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Jest/ Enzyme</li>
-        </ul>
-        <h3>Project Overview</h3>
-        <p class="project-overview"></p>
-        <h3>Project Links</h3>
-        <ul class="project-links">
-          <li>
-            <a href="#">Live Demo</a>
-          </li>
-          <li>
-            <a href="#">Source Code</a>
-          </li>
-          <li>
-            <span class="back">&larr; Back</span>
-          </li>
-        </ul>
-      </div>
-      <div id="drum" class="modal-project">
-        <h2>Drum Machine</h2>
-        <h3>Tech Used</h3>
-        <ul class="project__tech-list">
-          <li>React.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-        <h3>Project Overview</h3>
-        <p class="project-overview"></p>
-        <h3>Project Links</h3>
-        <ul class="project-links">
-          <li>
-            <a href="#">Live Demo</a>
-          </li>
-          <li>
-            <a href="#">Source Code</a>
-          </li>
-          <li>
-            <span class="back">&larr; Back</span>
-          </li>
-        </ul>
-      </div>
-      <div id="markdown" class="modal-project">
-        <h2>Markdown Previewer</h2>
-        <h3>Tech Used</h3>
-        <ul class="project__tech-list">
-          <li>React.js</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Jest/ Enzyme</li>
-        </ul>
-        <h3>Project Overview</h3>
-        <p class="project-overview"></p>
-        <h3>Project Links</h3>
-        <ul class="project-links">
-          <li><a href="#">Live Demo</a></li>
-          <li><a href="#">Source Code</a></li>
-          <li><span class="back">&larr; Back</span></li>
-        </ul>
-      </div>
     </div>
-    
-    
-    
+      <div id="weather-modal" class="project-modal">
+        <div class="project-details">
+          <h2>Weather Forecast</h2>
+          <h3>Tech Used</h3>
+          <ul class="project__tech-list">
+            <li>React.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Jest/ Enzyme</li>
+          </ul>
+          <h3>Project Overview</h3>
+          <p class="project-overview">This app was built using the React.js framework. Geolocation is used to determine the user's location. The weather data is
+            obtained by making asyncronous calls to the Weather Underground API
+          </p>
+          <h3>Project Links</h3>
+          <ul class="project-links">
+            <li>
+              <a href="#">Live Demo</a>
+            </li>
+            <li>
+              <a href="#">Source Code</a>
+            </li>
+            <li>
+              <span class="close back" data-modal="weather-modal">&larr; Back</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="flash-modal" class="project-modal">
+        <div class="project-details">
+          <h2>Flashcards</h2>
+          <h3>Tech Used</h3>
+          <ul class="project__tech-list">
+            <li>React.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Jest/ Enzyme</li>
+          </ul>
+          <h3>Project Overview</h3>
+          <p class="project-overview"></p>
+          <h3>Project Links</h3>
+          <ul class="project-links">
+            <li>
+              <a href="#">Live Demo</a>
+            </li>
+            <li>
+              <a href="#">Source Code</a>
+            </li>
+            <li>
+              <span class="close back" data-modal="flash-modal">&larr; Back</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="drum-modal" class="project-modal">
+        <div class="project-details">
+          <h2>Drum Machine</h2>
+          <h3>Tech Used</h3>
+          <ul class="project__tech-list">
+            <li>React.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <h3>Project Overview</h3>
+          <p class="project-overview"></p>
+          <h3>Project Links</h3>
+          <ul class="project-links">
+            <li>
+              <a href="#">Live Demo</a>
+            </li>
+            <li>
+              <a href="#">Source Code</a>
+            </li>
+            <li>
+              <span class="close back" data-modal="drum-modal">&larr; Back</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="markdown-modal" class="project-modal">
+        <div class="project-details">
+          <h2>Markdown Previewer</h2>
+          <h3>Tech Used</h3>
+          <ul class="project__tech-list">
+            <li>React.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Jest/ Enzyme</li>
+          </ul>
+          <h3>Project Overview</h3>
+          <p class="project-overview"></p>
+          <h3>Project Links</h3>
+          <ul class="project-links">
+            <li>
+              <a href="#">Live Demo</a>
+            </li>
+            <li>
+              <a href="#">Source Code</a>
+            </li>
+            <li>
+              <span class="close back" data-modal="markdown-modal">&larr; Back</span>
+            </li>
+          </ul>
+        </div>
+      </div>
   </main>
 
   
