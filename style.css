@@ -37,6 +37,8 @@ body {
   font-size: 3rem;
   color: white;
   display: inline-block;
+  transition: all .2s;
+  animation: fadein 2s ease-in;
 }
 
 .header__text--box {
@@ -82,9 +84,7 @@ body {
   text-transform: uppercase;
     text-decoration: none;
     padding: .5rem 2rem;
-    transition: all .2s;
     position: relative;
-    animation: fadein 2s ease-in;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -106,6 +106,8 @@ body {
   font-size: 1.6rem;
     margin-bottom: 2rem;
     display: inline-block;
+    transition: all .2s;
+    animation: fadein 2s ease-in;
 }
 
 
@@ -199,19 +201,19 @@ li {
   height: 90vh;
   display: none;
   position: relative;
-}
-
-.projects-title {
   color: white;
-  font-size: 4rem;
   text-align: center;
-  margin-top: 10rem;
-  letter-spacing: 1.75rem;
   text-transform: uppercase;
 }
 
+.projects-title {
+  font-size: 4rem;
+  margin-top: 10rem;
+  letter-spacing: 1.75rem;
+}
+
 .row {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto;
   
 }
@@ -231,7 +233,22 @@ li {
     }
 
 .projects__box {
+  border-radius: 2px;
   background-color: rgba(238, 238, 238,0.5);
+  padding: 3rem 0;
+}
+
+.projects__name {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.projects__pic {
+  border-radius: 2px;
+  width: 20rem;
+  height: 16rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 3px 2rem rgba(4, 16, 16,.4);
 }
 
 
