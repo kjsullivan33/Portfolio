@@ -176,35 +176,41 @@ body {
 }
 
 .about-details {
+
   margin-top: 15rem;
-  margin-left: 0rem;
+  margin-left: 50rem;
 }
 
 .about__header {
   margin-top: 10rem;
-  margin-left: 50rem;
+  margin-left: 0rem;
   text-transform: uppercase;
   letter-spacing: 1.1rem;
   font-size: 2.5rem;
 }
 
 .about__summary {
-  width: 50rem;
-  margin: 1rem 50rem;
+  width: 90%;
+  margin: 1rem 0rem;
   font-size: 1.6rem;
+}
+
+.about__lists {
+  display: inline-block;
+  width: 100%;
 }
 
 .about__tech-list {
   display: inline-block;
-  margin: 5rem 5rem 10rem 50rem;
+  margin-right: 10rem;
 }
 
 .about__skills-list {
   display: inline-block;
 }
-
 .about__list-title {
   font-size: 2rem;
+  margin-right: 2rem;
 }
 
 li {
@@ -334,7 +340,7 @@ li {
 }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 700px) {
   .heading-primary__main {
   font-size: 2rem;
   letter-spacing: 1.25rem;
@@ -345,6 +351,129 @@ li {
   font-size: 1.5rem;
   letter-spacing: 1rem;
 }
+
+#about-modal {
+  margin-top: 10px;
+  margin-left: 11px;
+  height: 94%;
+  width: 96%;
+}
+
+.about__profilepic--box {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translateY(0%);
+}
+
+.about__profilepic {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.about-details {
+  margin-top: 5rem;
+  margin-left: 20rem;
+  overflow-y: auto;
+  height: 85%;
+}
+
+.about__header {
+  margin-top: 0;
+  margin-left: 0rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.about__summary {
+  width: 310px;
+  margin: 1rem 1rem;
+  font-size: 1.6rem;
+}
+
+.about__lists {
+  display: block;
+  margin: 8.5rem 3rem;
+  
+}
+#projects-modal {
+  margin-top: 1rem;
+  margin-left: 1.1rem;
+  width: 94%;
+  height: 96%;
+}
+
+.project-content {
+  height: 96%;
+}
+
+  .projects-title {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.project-boxes {
+  margin-top: 3px;
+  height:75%;
+  overflow-y: scroll;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects__box {
+  margin-bottom: 2rem;
+  
+  padding-bottom: 3rem;
+}
+
+.col-1-of-4 {
+  width: 100%;
+  display: block;
+  margin-top: 7rem;
+  margin-left: 0;
+}
+
+
+.projects__pic {
+  border-radius: 2px;
+  width: 90%;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  box-shadow: 0 3px 2rem rgba(4, 16, 16,.4);
+}
+
+  .close-x {
+  right: 3rem;
+  
+}
+
+.project-modal {
+  height: 96%;
+  width: 94%;
+  padding: 3rem;
+}
+.project-details {
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #eee;
+  color: #777777;
+  width: 90%;
+  height: 85%;
+  overflow-y: scroll;
+  text-decoration: none;
+}
+
+.project__tech-list {
+  margin-left: 10rem;
+}
+
 }
 
 @media (max-width: 500px) {
@@ -400,42 +529,6 @@ li {
   font-size: 2.9rem;
 }
 
-  .close-x {
-  right: 3rem;
-  
-}
-
-#projects-modal {
-  margin-top: 10px;
-  margin-left: 11px;
-  width: 94%;
-  height: 96%;
-}
-
-  .projects-title {
-  font-size: 2.5rem;
-  margin-top: 8rem;
-  margin-left: 1rem;
-  text-align: center;
-}
-
-.project-boxes {
-  height: 75%;
-  overflow-y: scroll;
-}
-
-.projects__box {
-  margin-bottom: 5rem;
-}
-
-.col-1-of-4 {
-  width: 250px;
-  height: 300px;
-  display: block;
-  margin-top: 7rem;
-  margin-left: 4.5rem;
-}
-
 #about-modal {
   margin-top: 10px;
   margin-left: 11px;
@@ -486,26 +579,17 @@ li {
   margin: 1rem 10rem;
 }
 
-.project-modal {
-  height: 96%;
-  width: 94%;
-  padding: 3rem;
-}
-.project-details {
-  margin: 1rem 0.5rem;
-  /* margin-left: auto;
-  margin-right: auto; */
-  text-align: center;
-  background-color: #eee;
-  color: #777777;
-  width: 85%;
-  
-  text-decoration: none;
+.projects__pic {
+  border-radius: 2px;
+  width: 90%;
+  height: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  box-shadow: 0 3px 2rem rgba(4, 16, 16,.4);
 }
 
-.project__tech-list {
-  margin-left: 10rem;
-}
+
 
 }
 
